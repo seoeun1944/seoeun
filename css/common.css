@@ -1,0 +1,56 @@
+/* common.css */
+
+
+*{margin: 0; padding: 0;}
+html, body{
+    /* font: 12px / 170% 'Black Han Sans', sans-serif; */
+    /* font: 12px / 170% 'Noto Sans KR', sans-serif; */
+    font-family: 'Noto Sans KR', 'DM Serif Text', sans-serif;
+    font-weight: 800;
+    color: #000;
+    background-color: #000;
+}
+table, tr, th, td{
+    /* font: 12px / 170% 'Black Han Sans', sans-serif; */
+    /* font: 12px / 170% 'Noto Sans KR', sans-serif; */
+    font-weight: 800;
+    color: #000;
+    border-collapse: collapse;
+}
+input, select, textarea, button{
+    font: 12px / 170% 'Nanum Gothic', sans-serif;
+    font-weight: 800;
+    color: #000;
+    border-radius: 0;/*아이폰에서 끝이 둥글게나와서 초기화 해줌*/
+    border: none;
+    outline: none;
+    background: transparent;
+}
+h1, h2, h3, h4, h5, h6{font-weight: 500;}
+/* p {font-family: 'Noto Sans KR', sans-serif;} */
+b, strong{font-weight: normal;}
+i, em, address{font-style: normal;}
+ul, ol, li{list-style: none;}
+a, img, label{display: block;}
+img, fieldset, iframe{border: none;}
+legend, caption, hr{display: none;}
+a{text-decoration: none; color: #000;}
+
+/** STYLE *******************/
+input#toggle_menu{display: none;}
+.skip, .blind{
+    display: block;
+    height: 0;
+    overflow: hidden;
+    
+    position: absolute;
+    top: -6000px;
+}
+input#page1,
+input#page2,
+input#page3{display: none;}
+
+
+
+
+
