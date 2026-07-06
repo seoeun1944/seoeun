@@ -1,9 +1,8 @@
 export const profile = {
-  name: "Alexandra Moore,",
-  title: "Senior Producer",
-  bio: "A seasoned Senior Producer with 10+ years of experience, I excel in leading complex marketing and design projects from concept to completion.",
-  email: "hello@figma.com",
-  phone: "(555) 123-4567",
-  phoneHref: "tel:+15551234567",
-  linkedinHref: "http://linkedin.com/company/figma",
+  name: "김서은(Kim Seoeun)",
+  title: "Publisher",
+  bio: "5년차 퍼블리셔로, React·React Native·Flutter 등 다양한 프레임워크를 넘나들며 웹/앱 서비스를 구현합니다. 마이그레이션과 디자인 시스템 구축 경험도 있습니다.",
+  email: "fjrzl1345@gmail.com",
+  phone: "010-9467-1944",
+  phoneHref: "tel:+821094671944",
 };

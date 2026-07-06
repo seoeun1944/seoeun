@@ -24,15 +24,6 @@ export function ContactSidebar() {
       >
         {profile.phone} <span className="font-semibold">↗</span>
       </a>
-      <a
-        aria-label="Add me on LinkedIn (opens in new tab)"
-        href={profile.linkedinHref}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex w-full items-center gap-px border-t border-[#383838] py-3 text-[12px] tracking-[-0.01em]"
-      >
-        LinkedIn <span className="font-semibold">↗</span>
-      </a>
     </aside>
   );
 }

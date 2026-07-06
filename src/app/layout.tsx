@@ -18,9 +18,9 @@ const schibstedGrotesk = Schibsted_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Alexandra Moore — Senior Producer",
+  title: "김서은 — 퍼블리셔",
   description:
-    "Portfolio and resume of Alexandra Moore, Senior Producer with 10+ years of experience leading marketing and design projects.",
+    "5년차 퍼블리셔 김서은의 포트폴리오와 이력서입니다. React, React Native, Flutter 등으로 다양한 웹/앱 서비스를 개발했습니다.",
 };
 
 export default function RootLayout({
@@ -30,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="ko"
       className={`${geistSans.variable} ${geistMono.variable} ${schibstedGrotesk.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-black font-sans text-white">
