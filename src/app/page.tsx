@@ -1,63 +1,281 @@
-import Image from "next/image";
+const experience = [
+  {
+    title: "Senior Producer",
+    company: "Creative Agency XYZ",
+    companyHref: "https://www.figma.com/sites",
+    period: "June 2022 – Present",
+    location: "Remote & New York, NY",
+    bullets: [
+      "Seamlessly facilitate diverse creative experiences: from immersive installations to cinematic narratives. A catalyst for collaboration across all mediums.",
+      "Clients include: Lunethra, Driftwell, Clyra, Forgekind and more.",
+    ],
+  },
+  {
+    title: "Senior Producer",
+    company: "Pixel Studios",
+    companyHref: "https://www.figma.com/sites",
+    period: "December 2021 - June 2022",
+    location: "New York, NY",
+    bullets: [
+      "Orchestrated the creation of integrated video, motion, and photo content for multi-platform marketing campaigns, ensuring seamless execution and brand alignment.",
+      "Directed all phases of production operations (pre-production, production, post-production), meticulously managing budgets, contracts, and legal requirements to deliver projects on time and within quality standards.",
+      "Strategically developed and managed production schedules, creative strategies, and talent relations, optimizing resources to deliver high-quality content within budget parameters.",
+      "Clients include: Nestive, Zentrox, Pollenate, Vireo and more.",
+    ],
+  },
+  {
+    title: "Content Producer",
+    company: "Creative Hub Studio",
+    companyHref: "https://www.figma.com/sites",
+    period: "October 2016 - March 2018",
+    location: "Los Angeles, CA",
+    bullets: [
+      "Facilitated clear and efficient communication across cross-functional teams (Marketing, Brand, Creative, IT, QA), ensuring seamless collaboration and project alignment.",
+      "Proactively identified and integrated industry trends, emerging technologies, and cultural insights to enhance creative output and maintain brand relevance.",
+      "Clients include: Lunethra, Forgekind and more.",
+    ],
+  },
+];
+
+const skillGroups = [
+  {
+    title: "Project Management",
+    skills: [
+      "Budget Management & Forecasting",
+      "Timeline Development & Execution",
+      "Vendor & Contract Negotiation",
+      "On-Site Production Management",
+    ],
+  },
+  {
+    title: "Communication & Collaboration",
+    skills: [
+      "Cross-Functional Team Leadership",
+      "Client Relationship Management",
+      "Stakeholder Communication",
+    ],
+  },
+  {
+    title: "Strategic & Creative Oversight",
+    skills: [
+      "Creative Strategy Development",
+      "Talent Relations & Management",
+      "Creative Direction Oversight",
+      "Brand Alignment",
+    ],
+  },
+];
+
+const recommendations = [
+  {
+    quote:
+      "Alexandra brings sunshine to creative teams. Her optimism, problem-solving, and clear communication drive success.",
+    author: "Client, Driftwell",
+  },
+  {
+    quote:
+      "Alexandra is hungry to tackle new challenges. She’s delightful with clients and can diffuse a tense room with her laugh.",
+    author: "Creative Director, Creative Agency XYZ",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="flex flex-col items-center bg-black px-6 pt-5 pb-2.5 sm:px-8 lg:px-[30px]">
+      <header className="flex w-full max-w-[1440px] items-start justify-between whitespace-nowrap pb-16 font-display text-lg font-semibold tracking-[-0.02em] sm:pb-24 lg:pb-40 lg:text-2xl">
+        <div className="flex flex-col items-start">
+          <p>Alexandra Moore,</p>
+          <p className="font-normal text-[#ababab]">Senior Producer</p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+        <a href="#contact" aria-label="Navigate to the contact section">
+          About
+        </a>
+      </header>
+
+      <main className="flex w-full max-w-[1440px] flex-col gap-5 md:flex-row md:items-start">
+        <aside className="flex w-full flex-col items-start md:max-w-[368px] md:flex-1 md:pr-[10px] md:sticky md:top-0">
+          <div className="w-full border-t border-[#383838] py-8">
+            <p className="max-w-[420px] text-[15px] leading-[1.4] tracking-[-0.01em]">
+              A seasoned Senior Producer with 10+ years of experience, I excel
+              in leading complex marketing and design projects from concept
+              to completion.
+            </p>
+          </div>
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            aria-label="Send me an email"
+            href="mailto:hello@figma.com"
             target="_blank"
             rel="noopener noreferrer"
+            className="flex w-full items-center gap-px border-t border-[#383838] py-3 font-display text-[13px] font-semibold tracking-[-0.005em]"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+            hello@figma.com <span className="font-sans font-semibold">↗</span>
           </a>
           <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            aria-label="Call me"
+            href="tel:+15551234567"
+            className="flex w-full items-center gap-px border-t border-[#383838] py-3 text-[12px] tracking-[-0.01em]"
+          >
+            (555) 123-4567 <span className="font-semibold">↗</span>
+          </a>
+          <a
+            aria-label="Add me on LinkedIn (opens in new tab)"
+            href="http://linkedin.com/company/figma"
             target="_blank"
             rel="noopener noreferrer"
+            className="flex w-full items-center gap-px border-t border-[#383838] py-3 text-[12px] tracking-[-0.01em]"
           >
-            Documentation
+            LinkedIn <span className="font-semibold">↗</span>
           </a>
+        </aside>
+
+        <div className="flex w-full flex-col items-start md:flex-1 md:pl-5">
+          <section
+            aria-label="Work experience"
+            className="flex w-full flex-col items-start gap-9 border-t border-[#383838] pt-8 pb-16 lg:pb-20"
+          >
+            <h2 className="w-full font-display text-[13px] font-semibold tracking-[-0.005em]">
+              Experience
+            </h2>
+            <div className="flex w-full flex-col gap-12 lg:pr-5">
+              {experience.map((job) => (
+                <section
+                  key={job.company}
+                  aria-label={`Work experience at ${job.company}`}
+                  className="flex w-full flex-wrap items-start gap-6 border-t border-[#383838]/50 pt-5 lg:gap-[30px]"
+                >
+                  <div className="flex min-w-[220px] flex-1 flex-col items-start gap-3">
+                    <h3 className="w-full font-display text-base font-semibold tracking-[-0.01em]">
+                      {job.title}
+                    </h3>
+                    <div className="flex w-full flex-col gap-0.5 text-[15px] leading-[1.4] tracking-[-0.01em] text-[#ababab]">
+                      <a
+                        aria-label={`Visit ${job.company} website (opens in new tab)`}
+                        href={job.companyHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full"
+                      >
+                        {job.company} ↗
+                      </a>
+                      <p className="w-full">{job.period}</p>
+                      <p className="w-full">{job.location}</p>
+                    </div>
+                  </div>
+                  <ul className="min-w-[260px] flex-1 list-disc pl-5 text-[15px] leading-[1.4] tracking-[-0.005em]">
+                    {job.bullets.map((bullet) => (
+                      <li key={bullet} className="mb-2 last:mb-0">
+                        {bullet}
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              ))}
+            </div>
+          </section>
+
+          <section
+            aria-label="Skills"
+            className="flex w-full flex-col items-start gap-10 border-t border-[#383838] pt-8 pb-16 lg:pb-20"
+          >
+            <h2 className="w-full font-display text-[13px] font-semibold tracking-[-0.005em]">
+              Skills
+            </h2>
+            <div className="flex w-full flex-wrap gap-9 text-[15px] tracking-[-0.01em]">
+              <div className="flex min-w-[220px] flex-1 flex-col gap-12">
+                {skillGroups.slice(0, 2).map((group) => (
+                  <div key={group.title} className="w-full">
+                    <h4 className="mb-3 text-[#ababab]">{group.title}</h4>
+                    <ul className="list-disc pl-5 leading-[1.3]">
+                      {group.skills.map((skill) => (
+                        <li key={skill} className="mb-1 last:mb-0">
+                          {skill}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+              <div className="min-w-[260px] flex-1">
+                <h4 className="mb-3 text-[#ababab]">{skillGroups[2].title}</h4>
+                <ul className="list-disc pl-5 leading-[1.3]">
+                  {skillGroups[2].skills.map((skill) => (
+                    <li key={skill} className="mb-1 last:mb-0">
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section
+            aria-label="Educational background"
+            className="flex w-full flex-col items-start gap-9 border-t border-[#383838] pt-8 pb-16 lg:pb-20"
+          >
+            <h2 className="w-full font-display text-[13px] font-semibold tracking-[-0.005em]">
+              Education
+            </h2>
+            <div className="flex w-full flex-col gap-9 text-[15px] tracking-[-0.01em] sm:flex-row">
+              <h3 className="flex-1 font-normal leading-[1.4]">
+                University of California, Los Angeles (UCLA)
+              </h3>
+              <div className="flex-1">
+                <h4 className="mb-1 leading-[1.4]">
+                  Bachelor of Fine Arts in Graphic Design
+                </h4>
+                <h4 className="leading-[1.4] text-[#ababab]">
+                  Minor: Studio Photography
+                </h4>
+              </div>
+            </div>
+          </section>
+
+          <div className="flex w-full flex-col gap-9 pb-16 sm:flex-row lg:pb-20">
+            <section
+              aria-label="Recommendations"
+              className="flex flex-1 flex-col items-start gap-9 border-t border-[#383838]/50 pt-4"
+            >
+              <h2 className="w-full font-display text-[13px] font-semibold tracking-[-0.005em]">
+                Recommendations:
+              </h2>
+              <div className="w-full text-[15px] leading-[1.4] tracking-[-0.01em]">
+                {recommendations.map((rec, i) => (
+                  <p key={rec.author} className={i === 0 ? "mb-4" : ""}>
+                    “{rec.quote}”
+                    <br />
+                    <span className="text-[#ababab]">{rec.author}</span>
+                  </p>
+                ))}
+              </div>
+            </section>
+            <section
+              aria-label="Certifications"
+              className="flex flex-1 flex-col items-start gap-9 border-t border-[#383838]/50 pt-4"
+            >
+              <h2 className="w-full font-display text-[13px] font-semibold tracking-[-0.005em]">
+                Certifications:
+              </h2>
+              <p className="w-full text-[15px] leading-[1.4] tracking-[-0.01em]">
+                Safe Sets International - COVID-19 Level Production Safety,
+                2020
+              </p>
+            </section>
+          </div>
+
+          <footer
+            id="contact"
+            className="flex min-h-[200px] w-full items-end justify-between border-t border-[#383838]/50 py-5 sm:min-h-[300px] lg:min-h-[400px]"
+          >
+            <a
+              aria-label="Send me an email"
+              href="mailto:hello@figma.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 font-display text-lg font-semibold tracking-[-0.02em] lg:text-2xl"
+            >
+              Contact me
+            </a>
+          </footer>
         </div>
       </main>
     </div>
