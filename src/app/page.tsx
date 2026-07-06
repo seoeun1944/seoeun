@@ -1,3 +1,7 @@
+import { Header } from "@/components/Header";
+import { ContactSidebar } from "@/components/ContactSidebar";
+import { ContactFooter } from "@/components/ContactFooter";
+
 const experience = [
   {
     title: "Senior Producer",
@@ -82,51 +86,10 @@ const recommendations = [
 export default function Home() {
   return (
     <div className="flex flex-col items-center bg-black px-6 pt-5 pb-2.5 sm:px-8 lg:px-[30px]">
-      <header className="flex w-full max-w-[1440px] items-start justify-between whitespace-nowrap pb-16 font-display text-lg font-semibold tracking-[-0.02em] sm:pb-24 lg:pb-40 lg:text-2xl">
-        <div className="flex flex-col items-start">
-          <p>Alexandra Moore,</p>
-          <p className="font-normal text-[#ababab]">Senior Producer</p>
-        </div>
-        <a href="#contact" aria-label="Navigate to the contact section">
-          About
-        </a>
-      </header>
+      <Header navLabel="About" navHref="/about" />
 
       <main className="flex w-full max-w-[1440px] flex-col gap-5 md:flex-row md:items-start">
-        <aside className="flex w-full flex-col items-start md:max-w-[368px] md:flex-1 md:pr-[10px] md:sticky md:top-0">
-          <div className="w-full border-t border-[#383838] py-8">
-            <p className="max-w-[420px] text-[15px] leading-[1.4] tracking-[-0.01em]">
-              A seasoned Senior Producer with 10+ years of experience, I excel
-              in leading complex marketing and design projects from concept
-              to completion.
-            </p>
-          </div>
-          <a
-            aria-label="Send me an email"
-            href="mailto:hello@figma.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex w-full items-center gap-px border-t border-[#383838] py-3 font-display text-[13px] font-semibold tracking-[-0.005em]"
-          >
-            hello@figma.com <span className="font-sans font-semibold">↗</span>
-          </a>
-          <a
-            aria-label="Call me"
-            href="tel:+15551234567"
-            className="flex w-full items-center gap-px border-t border-[#383838] py-3 text-[12px] tracking-[-0.01em]"
-          >
-            (555) 123-4567 <span className="font-semibold">↗</span>
-          </a>
-          <a
-            aria-label="Add me on LinkedIn (opens in new tab)"
-            href="http://linkedin.com/company/figma"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex w-full items-center gap-px border-t border-[#383838] py-3 text-[12px] tracking-[-0.01em]"
-          >
-            LinkedIn <span className="font-semibold">↗</span>
-          </a>
-        </aside>
+        <ContactSidebar />
 
         <div className="flex w-full flex-col items-start md:flex-1 md:pl-5">
           <section
@@ -262,20 +225,7 @@ export default function Home() {
             </section>
           </div>
 
-          <footer
-            id="contact"
-            className="flex min-h-[200px] w-full items-end justify-between border-t border-[#383838]/50 py-5 sm:min-h-[300px] lg:min-h-[400px]"
-          >
-            <a
-              aria-label="Send me an email"
-              href="mailto:hello@figma.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 font-display text-lg font-semibold tracking-[-0.02em] lg:text-2xl"
-            >
-              Contact me
-            </a>
-          </footer>
+          <ContactFooter />
         </div>
       </main>
     </div>
