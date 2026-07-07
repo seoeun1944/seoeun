@@ -3,8 +3,9 @@ import { ContactSidebar } from "@/components/ContactSidebar";
 import { ContactFooter } from "@/components/ContactFooter";
 
 const aboutParagraphs = [
-  "5년차에 접어드는 퍼블리셔로 웹/앱 서비스를 개발하며 근무했습니다. SI 업체와 콘텐츠 플랫폼 회사에서 다양한 프로젝트를 진행했으며 React, React Native, Flutter 등 다양한 프레임워크를 경험했습니다.",
-  "3년간 달려오면서 야근도 많았고 제가 잘하고 있는 게 맞는지 고민하면서 번아웃이 오기도 했습니다. 하지만 쉬면서 일과 삶의 균형이 중요하다는 생각을 많이 하게 되었고, 수영과 여행을 통해 재충전 시간을 갖고 다시 도전하고자 합니다.",
+  "5년 차 퍼블리셔로 웹과 앱 서비스를 구축하고 운영하며 다양한 프로젝트를 경험했습니다. SI 기업에서는 금융, 커머스, 공공, 병원 등 여러 도메인의 프로젝트를 수행했고, 이후 교육 콘텐츠 플랫폼 기업에서는 퍼블리셔로 근무하며 Next.js 기반 서비스 마이그레이션, 디자인 시스템 구축, 운영 및 유지보수 업무를 담당했습니다.",
+  "React, Next.js, React Native, Flutter 등 다양한 프레임워크를 경험하며 개발 업무를 수행했지만, 사용자와 가장 가까운 화면을 만들고 완성도를 높여가는 퍼블리싱 분야에서 가장 큰 흥미와 강점을 느꼈습니다. 디자인 전공과 웹디자인·퍼블리싱 교육을 통해 쌓은 경험을 바탕으로 UI의 일관성과 사용성을 고민하고, 디자이너와 협업하며 공통 컴포넌트와 디자인 시스템을 함께 만들어가는 과정에서 퍼블리셔로서의 역량을 더욱 키울 수 있었습니다.",
+  "또한 업무와 개인의 삶이 서로 긍정적인 영향을 준다는 것을 경험했습니다. 꾸준한 필라테스와 여행을 통해 균형 있는 생활을 유지하며 집중력과 업무 효율을 높였고, 이러한 경험은 더 나은 결과물을 만드는 원동력이 되었습니다. 앞으로도 재사용성과 유지보수성을 고려한 UI를 고민하며, 사용자와 동료 모두에게 도움이 되는 퍼블리셔로 꾸준히 성장해 나가고 싶습니다.",
 ];
 
 // Placeholder slots until real client logos are provided.
@@ -26,7 +27,7 @@ export default function About() {
             <h2 className="w-full font-display text-[13px] font-semibold tracking-[-0.005em]">
               About Me
             </h2>
-            <div className="flex max-w-[720px] flex-col gap-6 font-display text-lg leading-[1.45] tracking-[-0.01em] sm:text-2xl">
+            <div className="flex max-w-[720px] flex-col gap-6 font-display text-base leading-[1.45] tracking-[-0.01em] sm:text-xl">
               {aboutParagraphs.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
