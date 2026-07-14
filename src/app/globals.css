@@ -5,6 +5,10 @@
   --foreground: #ffffff;
 }
 
+body {
+  word-break: keep-all;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

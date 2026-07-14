@@ -8,7 +8,7 @@ const reflux = [
     period: "2023.05 – 2024.01",
     description: "부동산 투자 앱 제작",
     stack: "Flutter · Dart",
-    contribution: 80,
+    contribution: 60,
     bullets: [
       "페이지 리로딩: 실시간 정보 페이지를 위해 뒤로가기 시에도 페이지가 새로고침되도록 API를 재호출해 리로딩을 구현, 앱 구조상 스택 페이지가 정적 상태로 유지되는 문제를 해결",
       "Provider 상태 관리: Provider와 ChangeNotifier로 매수·매도 수량·금액 계산 상태와 실시간 반영 그래프 로직을 관리하고, 상태 변경에 따라 UI를 자동 업데이트해 코드 복잡도를 줄이고 렌더링 성능을 향상",
@@ -23,7 +23,7 @@ const reflux = [
     period: "2022.10 – 2023.05",
     description: "투자상품 소개 및 정보 공유 홈페이지 제작(반응형)",
     stack: "React · SCSS · Styled-components",
-    contribution: 80,
+    contribution: 33.33,
     bullets: [
       "Styled-components로 비슷한 두 사이트의 중복되는 헤더·게시판 스타일을 독립적으로 관리·재사용해 코드 일관성을 유지",
       "SCSS 계층 구조로 색상·폰트·버튼 스타일을 변수와 믹스인으로 관리해 코드 중복을 최소화하고 유지보수성을 개선",
@@ -41,7 +41,7 @@ const reflux = [
     period: "2021.10 – 2022.02",
     description: "복합쇼핑몰 홈페이지 및 앱 리뉴얼(반응형)",
     stack: "HTML · CSS · JavaScript · React Native",
-    contribution: 80,
+    contribution: 50,
     bullets: [
       "바코드 인식 네이티브 화면과 웹뷰 상품 상세 페이지 간 전환을 위해 WebView의 onNavigationStateChange로 URL 변경을 감지해 화면 전환을 관리",
       "웹: 주문, 장바구니, 배송조회, 취소·교환·반품 화면 구현",
@@ -60,7 +60,7 @@ const reflux = [
     period: "2022.12 – 2023.02",
     description: "약국몰 유지보수",
     stack: "JavaScript",
-    contribution: 80,
+    contribution: 60,
     bullets: [
       "장바구니 수량·옵션 변경을 AJAX로 실시간 업데이트, 금액 계산·쿠폰 적용 로직 구현",
       "PC: 구매목록 재구매 로직 개발",
@@ -85,7 +85,7 @@ const reflux = [
     period: "2020.12 – 2024.01",
     description: "홈페이지 유지보수(반응형)",
     stack: "HTML · CSS · JavaScript",
-    contribution: 80,
+    contribution: 70,
     bullets: [
       "세미나 신청 및 뉴스레터 기능 개발",
       "화면 수정 및 메뉴 구조 개편 등 유지보수",
@@ -99,7 +99,7 @@ const reflux = [
     period: "2022.05 – 2024.01",
     description: "건설 행정 시스템 유지보수",
     stack: "HTML · CSS · JavaScript",
-    contribution: 80,
+    contribution: 100,
     bullets: [
       "건설용역 반려 신청, 업 등록·수정·승인 로직 및 기능 수정",
       "고객사와의 요구사항 조율 및 오류사항 대응",
@@ -114,7 +114,7 @@ const reflux = [
     period: "2020.12 – 2024.01",
     description: "교육 플랫폼 유지보수",
     stack: "HTML · CSS · JavaScript",
-    contribution: 80,
+    contribution: 20,
     bullets: [
       "화면 레이아웃 수정 및 웹 접근성 개선",
       "교과서 질관리 평가 기능 개발",
@@ -133,10 +133,10 @@ const reflux = [
   },
   {
     title: "녹십자아이메드 · 검진고객센터",
-    period: "2020.12 – 2024.01",
+    period: "2020.12 – 2021.01",
     description: "병원 홈페이지 제작(반응형)",
     stack: "HTML · CSS · JavaScript",
-    contribution: 80,
+    contribution: 100,
     bullets: ["아이메드, 강남센터, 강북센터 홈페이지 화면 구현"],
     links: [
       { label: "녹십자아이메드", href: "https://www.gcimed.com/main" },
@@ -163,9 +163,9 @@ const companies = [
         title: "북스 · 콘텐츠 플랫폼",
         period: "2025.12 – 2026.06",
         description:
-          "북스: 도서 판매\n콘텐츠 플랫폼: 모의고사 판매, 응시·성적·입시 예측 서비스",
+          "북스: 도서 판매 사이트 마이그레이션\n콘텐츠 플랫폼: 모의고사 판매·응시·성적·입시 예측 사이트 마이그레이션",
         stack: "Next.js(App Router) · TypeScript · Tailwind CSS · DaisyUI",
-        contribution: 80,
+        contribution: 33.33,
         bullets: [
           "서비스 마이그레이션: 북스는 ASP 기반을 Next.js(App Router)로, 콘텐츠 플랫폼은 Vue 기반을 Next.js로 마이그레이션하며 프로젝트 구조와 공통 UI를 개선",
           "디자인 시스템 구축: Tailwind CSS와 DaisyUI로 Button, Input, Modal 등 공통 UI 컴포넌트를 구축, Vue·Next.js 프로젝트 간 UI 일관성을 위해 DaisyUI를 도입하고 화면 구현 과정에서 디자이너와 함께 컴포넌트 규칙을 점진적으로 정립",
@@ -182,9 +182,9 @@ const companies = [
         title: "닷컴 · 북스 · 리트 운영",
         period: "2025.01 – 2026.06",
         description:
-          "닷컴: 강의, 시간표, 입시설명회 등 입시 정보 제공\n북스: 도서 판매\n리트: LEET(법학적성시험) 강의·모의고사·교재 제공, 로스쿨 입시 전문 플랫폼",
+          "닷컴: 강의, 시간표, 입시설명회 등 입시 정보 제공 사이트 유지보수\n북스: 도서 판매 사이트 유지보수\n리트: LEET 강의·모의고사·교재 제공, 로스쿨 입시 정보 사이트 유지보수",
         stack: "",
-        contribution: 80,
+        contribution: 100,
         bullets: [
           "신규 기능 개발: 급식 제공, 풀서비스(점수로 합격 예측 서비스) 등 신규 기능 페이지 개발 및 UI 개선",
           "운영 이슈 대응: 운영 중 발생한 버그 수정 및 QA 대응으로 서비스 안정성 유지",
